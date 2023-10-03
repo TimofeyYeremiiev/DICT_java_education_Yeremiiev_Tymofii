@@ -13,6 +13,7 @@ public class Chatbot {
         remind_name();
         ask_for_age();
         counting();
+        quitz();
 
         System.out.println("Goodbye, have a nice day!");
     }
@@ -65,6 +66,14 @@ public class Chatbot {
     }
 
     private void quitz(){
-        System.out.println("Lets make some quest! ");
+        System.out.println("Lets make some quest! How much functions has class \"Chatbot\"? ");
+        System.out.println("1: 1, 2: 8, 3: 18, 4: 16");
+        while(true){
+            if (get_input_int("Choose correct answer") == 2){
+                System.out.println("Correct");
+                break;
+            }
+            System.out.println("Wrong");
+        }
     }
 }
