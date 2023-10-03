@@ -8,11 +8,13 @@ public class Chatbot {
     private final String birthYear = "2023";
     private final Scanner scan = new Scanner(System.in);
 
-    //Main loop
     public void run(){
         greating();
         remind_name();
         ask_for_age();
+        counting();
+
+        System.out.println("Goodbye, have a nice day!");
     }
 
     private void greating(){
@@ -55,10 +57,14 @@ public class Chatbot {
     }
 
     private void counting(){
-
+        System.out.println("Now I will prove to you that I can count to any number you want!");
+        int num = get_input_int("Your num is?");
+        for(int a = 1; a <= num; a++){
+            System.out.println(a + " !");
+        }
     }
 
     private void quitz(){
-
+        System.out.println("Lets make some quest! ");
     }
 }
